@@ -96,7 +96,7 @@ function totalCart(){
     document.querySelector(".total").innerHTML = `Tổng: <span id="sum">${total.toLocaleString('vi-VN')}</span>đ`;
     let empty = document.getElementById("empty");
     
-    if(cartItems){
+    if(total != 0){
         empty.style.display ="none";
     } else{
         empty.style.display ="block";
